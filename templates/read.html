@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Read</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Повідомлення</h1>
+
+{% for time, item in data.items() %}
+
+<div>
+
+    <h3>{{ time }}</h3>
+
+    <b>{{ item.username }}</b>
+
+    <p>{{ item.message }}</p>
+
+</div>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
